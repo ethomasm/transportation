@@ -6,7 +6,7 @@ title:            'Austin Transportation Open Data and Performance Hub'
 tagline:          'Open Data Projects at the Austin Transportation Department'
 description:      ''
 url:            https://johnclary.github.io/
-baseurl: /transportation
+baseurl: https://johnclary.github.io/transportation
 
 author:
   name:           ''
