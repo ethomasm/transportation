@@ -1,58 +1,56 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid opi">
-    <row>
-      <div class="col-sm-6">
-        <h2> {{ page.short-name }}</h2>
-        <p>City of Austin Transportation Department</p>
-      </div>
-      <div class="col-sm-6 nav">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header navbar-right">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<div class="container-fluid">
+
+    <!-- nav for medium and larger display -->
+    <div class="row background-img hidden-sm-down">  <!-- header row -->
+        <div class="col-sm-6 align-self-end justify-content-md-end justify-content-sm-center pt-2 pb-2">
+            <a class="navbar-brand" href="#">Open Data and Performance Hub</a>
+        </div>
+        <div class="col-sm-6 nav align-self-center justify-content-end">
+            <div class="dropdown">
+              <button class="btn btn-secondary nav-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                {{ page.short-name }}
+
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Signals on Flash</a>
+                <a class="dropdown-item" href="#">Signal Timing</a>
+                <a class="dropdown-item" href="#">Device Status</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Asset Map</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Data Inventory</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row navbar-toggleable-md hidden-md-up background-img">
+        <div class="col">
+          <a class="navbar-brand" href="#">Open Data and Performance Hub</a>
+        </div>
+        <div class="col">
+          <button class="navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-menu"></i></span>
           </button>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav nav-tabs navbar-right">  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+        </div>
+        </div>
+    </div>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signal Operations<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ site.baseurl }}/device-status">Device Status</a></li>
-                <li><a href="{{ site.baseurl }}/signals-on-flash">Signals on Flash</a></li>
-                <li><a href="{{ site.baseurl }}/signal-timing">Signal Timing</a></li>
-                <li><a href="{{ site.baseurl }}/signal-assets">Signal Assets</a></li>
-                <li><a href="{{ site.baseurl }}/signal-requests">Signal Requests</a></li>
-              </ul>
-            </li>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maps<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="http://austin.maps.arcgis.com/apps/webappviewer/index.html?id=b4d546f2b83244a79a092b1844064714">Signal Map <i class="fa fa-external-link"></i></a></li>
-              </ul>
-            </li>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Open Data<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ site.baseurl }}/data-inventory/">Open Data Inventory</li>
-                <li><a href="http://github.com/cityofaustin/transportation">Austin Transportation GitHub <i class="fa fa-external-link"></i></a></li>
-              </ul>
-            </li>
-
-            <li role="presentation"><a href="{{ site.baseurl }}/">Home</a></li>
-
-          </ul>
-        </div><!-- /.navbar-collapse -->
-
-      </div>
-    </row>
-  </row>
-
-</nav>
+    </div>
